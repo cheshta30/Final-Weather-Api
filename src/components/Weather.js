@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Weather.css';
 
 function FetchWeatherReports(cityName) {
-  return fetch(`http://api.weatherapi.com/v1/current.json?key=8ddad426a1534588827182325241706&q=${cityName}&aqi=no`);
+  return fetch(`https://api.weatherapi.com/v1/current.json?key=5d4a75d459b2424483f51126241806&q=${cityName}&aqi=no`);
 }
 function useSearchParams() {
   const [searchParams, setSearchParams] = useState(new URLSearchParams(window.location.search));
